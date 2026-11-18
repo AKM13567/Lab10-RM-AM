@@ -1,3 +1,6 @@
+# https://github.com/AKM13567/Lab10-RM-AM.git
+# Partner 1 - Aarya Maskara
+# Partner 2 - Ruteshkhanna Manikhandhan
 
 import math
 
