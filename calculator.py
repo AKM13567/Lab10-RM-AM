@@ -4,6 +4,13 @@
 
 import math
 
+def square_root(a):
+    if a < 0:
+        raise ValueError("The square root function does not accept negative numbers.")
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return square_root(a**2 + b**2)
 def add(a, b):
     return a + b
 
