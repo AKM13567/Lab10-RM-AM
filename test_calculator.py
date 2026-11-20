@@ -30,15 +30,21 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(8,2),6)
 
     def test_divide_by_zero(self):
-        with self.assertRaises(ZeroDivisionError):
-            div(4,0)
+        try:
+            div(134, 0)  
+            self.fail("ZeroDivisionError was not raised")  
+        except ZeroDivisionError:
+            pass
 
     def test_logarithm(self):
         self.assertEqual(logarithm(2,8),3.0)
 
     def test_log_invalid_base(self):
-        with self.assertRaises(ValueError):
-            logarithm(1,5)
+        try:
+            logarithm(1, 5)
+            self.fail("ValueError was not raised")
+        except ValueError:
+            pass
 
 if __name__ == '__main__':
     unittest.main()
